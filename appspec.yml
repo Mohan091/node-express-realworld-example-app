@@ -5,12 +5,12 @@ files:
     destination: /home/ubuntu/backend
 hooks:
   BeforeInstall: 
-    - location: /dependencies.sh
+    - location: /scriptdependencies.sh
       timeout: 300
       runas: root
   Install: 
     - runas: root     
   AfterInstall: 
-    - location: /postInstall.sh 
+    - location: /scriptpostInstall.sh 
       timeout: 300
       runas: root
