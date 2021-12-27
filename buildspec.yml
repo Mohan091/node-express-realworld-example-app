@@ -1,0 +1,18 @@
+version: 0.2
+
+phases: 
+  pre_build: 
+    command: 
+      - echo entered in prebuild phase     
+
+  build: 
+    command: 
+      - echo entered into build phase
+      - sed -i 's/localhost/172.31.83.68:27017/' app.js
+  post_build: 
+    command: 
+      - echo entered in post build stage     
+
+artifacts: 
+  files: 
+    - '**/*'
