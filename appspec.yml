@@ -5,12 +5,12 @@ files:
     destination: /home/ubuntu
 hooks:
   BeforeInstall: 
-    - location: script/Install_dependencies.sh
+    - location: script/dependencies.sh
       timeout: 300
       runas: root
   Install: 
     - runas: root     
   AfterInstall: 
-    - location: script/After_Install.sh 
+    - location: script/postInstall.sh 
       timeout: 300
       runas: root
