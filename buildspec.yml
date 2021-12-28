@@ -8,7 +8,7 @@ phases:
   build: 
     command: 
       - echo entered into build phase
-      - sed -i 's/localhost/172.31.83.68:27017/' app.js
+      - sed -i 's/localhost/172.31.81.57:27017,172.31.84.79:27017,172.31.91.74:27017/' app.js
   post_build: 
     command: 
       - echo entered in post build stage     
