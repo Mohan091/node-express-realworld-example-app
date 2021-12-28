@@ -7,10 +7,6 @@ files:
     timeout: 300
     
 hooks:
-  ApplicationStop: 
-    - location: script/stop_server.sh
-      timeout: 300
-      run-as: root
   Install:
     - location: script/Install.sh
       timeout: 300
@@ -19,6 +15,10 @@ hooks:
     - location: script/start_server.sh
       timeout: 300
       run-as: root
+  ApplicationStop: 
+    - location: script/stop_server.sh
+      timeout: 300
+      run-as: root    
   
  
            
