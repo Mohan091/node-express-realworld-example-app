@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
-runas: root
+run-as: root
 files:  
   - source: /
     destination: /home/ubuntu/backend/
@@ -10,13 +10,13 @@ hooks:
   BeforeInstall:
     - location: script/InstallDependencies.sh
       timeout: 300
-      runas: root
+      run-as: root
   ApplicationStart:
     - location: script/start_server.sh
       timeout: 300
-      runas: root
+      run-as: root
   ApplicationStop:
     - location: script/stop_server.sh
       timeout: 300
-      runas: root
+      run-as: root
            
