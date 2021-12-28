@@ -5,3 +5,4 @@ sudo apt-get install -y nodejs
 apt-get install -y nodejs
 sudo npm install -g npm@latest
 sudo npm install
+sudo npm install pm2 -g
