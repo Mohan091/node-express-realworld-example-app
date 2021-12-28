@@ -8,7 +8,7 @@ files:
     
 hooks:
   BeforeInstall:
-    - location: script/InstallDependencies.sh
+    - location: script/Install_Dependencies.sh
       timeout: 300
       run-as: root
   ApplicationStart:
