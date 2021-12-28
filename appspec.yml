@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:  
   - source: /
-    destination: /home/ubuntu/backend
+    destination: /home/ubuntu/backend/
     
 hooks: 
   BeforeInstall: 
@@ -13,5 +13,13 @@ hooks:
     - runas: root     
   AfterInstall: 
     - location: script/AfterInstall.sh 
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: script/start_server.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: script/stop_server.sh
       timeout: 300
       runas: root
