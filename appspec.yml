@@ -7,7 +7,7 @@ files:
 hooks:
 
   BeforeInstall: 
-    - location: script/InstallDependencies.sh
+    - location: /script/InstallDependencies.sh
       timeout: 300
       runas: root
       
@@ -15,6 +15,6 @@ hooks:
     - runas: root     
     
   AfterInstall: 
-    - location: script/AfterInstall.sh 
+    - location: /script/AfterInstall.sh 
       timeout: 300
       runas: root
