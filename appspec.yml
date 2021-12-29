@@ -15,6 +15,11 @@ hooks:
     - location: script/start_server.sh
       timeout: 300
       run-as: root
+  ApplicationStop: 
+    - location: script/stop_server.sh
+      timeout: 300
+      run-as: root
+      
  
  
            
