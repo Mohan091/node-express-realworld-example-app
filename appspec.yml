@@ -7,15 +7,11 @@ files:
     timeout: 300
     
 hooks:
-  BeforeInstall:
-    - location: script/Install.sh
-      timeout: 300
-      run-as: root
   Install: 
     - timeout: 300
       run-as: root
   AfterInstall: 
-    - location: script/AfterInstall.sh
+    - location: script/Install.sh
       timeout: 300
       run-as: root
   ApplicationStart:
