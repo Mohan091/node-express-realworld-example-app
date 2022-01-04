@@ -1,4 +1,4 @@
 #!/bin/bash
-npm start
+sudo pm2 start app.js
 
 
