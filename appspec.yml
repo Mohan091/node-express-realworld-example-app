@@ -14,6 +14,10 @@ hooks:
   Install: 
     - timeout: 300
       run-as: root
+  AfterInstall: 
+    - location: script/AfterInstall.sh
+      timeout: 300
+      run-as: root
   ApplicationStart:
     - location: script/start_server.sh
       timeout: 300
